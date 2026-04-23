@@ -1,4 +1,6 @@
+
 import SocialLink from "./SocialLink.jsx";
+
 
 function Social({ withWrapper = true }){
     const links = [
@@ -9,7 +11,7 @@ function Social({ withWrapper = true }){
     ];
 
     const content = (
-        <ul>
+        <ul className="social-panel">
             {links.map((link) => (
                 <SocialLink
                 key={link.url}
